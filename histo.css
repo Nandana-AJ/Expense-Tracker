@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e4e9d4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+form input {
+    width: 30%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.styled-button {
+    width: 30%; /* Match the width of the input box */
+    padding: 0.5rem; /* Match the padding of the input box */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #FCAC5F;
+    color: #111;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 2rem; /* Adjust margin to space it properly */
+}
+#show_b{
+margin-left: 280px;
+}
+
+.styled-button:hover {
+    background-color: #564a0a;
+    color: #ddd;
+}
+
+#monthSelectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#monthSelectContainer label {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #111;
+}
+
+#monthSelectContainer select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+#viewButtons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#viewButtons button {
+    width: 45%;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #FCAC5F;
+    color: #111;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#viewButtons button:hover {
+    background-color: #564a0a;
+    color: #ddd;
+}
+
+#expenseChartContainer {
+    width: 100%;
+    background-color: #fff8e7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+canvas {
+    width: 100% !important;
+    height: 500px !important; /* Adjust this value to increase the height of the histogram */
+}
