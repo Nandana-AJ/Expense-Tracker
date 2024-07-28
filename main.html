@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <button class="top-right-button" onclick="window.location.href='hist.html'">Expense Analysis</button>
+        <div class="login-box">
+            <div class="header">
+                <img src="wallet.png" alt="Wallet" height="45px">
+                <h2 style="color: #FCAC5F; text-align: center;">Expense Tracker</h2>
+            </div>
+            <div class="inputs">
+                <input type="date" id="date">
+            </div>
+            <div class="buttons">
+                <button class="button" id="button1">Cash In</button>
+                <button class="button" id="button2">Cash Out</button>
+            </div>
+        </div>
+        <div class="table-trans"> 
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Cash In</th>
+                        <th>Cash Out</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="green" id="cashInLabel">0</td>
+                        <td class="red" id="cashOutLabel">0</td>
+                        <td id="balanceLabel">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <canvas id="myChart" width="400" height="200"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
