@@ -1,0 +1,135 @@
+/* cash_in_styles.css */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: gray;
+    color:white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#item{
+    background-color: rgb(205, 197, 197);
+}
+#amount{
+    background-color: rgb(205, 197, 197);
+}
+
+
+label {
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;
+}
+.container{
+   background-color: rgba(68, 68, 68, 0.8); 
+   padding:22px 45px;
+   border-radius: 10px; 
+   display: flex;
+   flex-direction: column;
+}
+input[type="text"],
+input[type="number"] {
+    width: 360px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* CSS for the table */
+table {
+    margin-block:12px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #f3a216;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f3a216;
+}
+
+
+
+/* Hover effect on rows */
+tr:hover {
+    background-color: rgb(228, 233, 212);
+    color:#f3a216;
+}
+
+/* Responsive table */
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        border-bottom: 2px solid #ddd;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        text-align: right;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
+
+#total-amount {
+/* Adjust this value to move the input field towards the left */
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button {
+    width: 32%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FCAC5F;
+    color: #111;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #564a0a;
+    color:#ddd
+}
