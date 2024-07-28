@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(228, 233, 212);
+  }
+  
+  .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(68, 68, 68, 0.8);
+    color: white;
+    text-align: center;
+  }
+  h1{
+    font-size: 4rem;
+    color: #FCAC5F;
+    margin-bottom: 0%;
+  }
+  #started{
+    width: 25%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FCAC5F;
+    color: #111;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  #started:hover{
+    background-color: #564a0a;
+    color:#ddd;
+    text-decoration: none;
+  }
+  #started:hover {
+    color: #ddd;
+    background-color: #564a0a;
+    text-decoration: none;
+  }
+  span{
+    color: #FCAC5F;
+  }
+  .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+  }
+  #about{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 0;
+    font-size: 0.9rem;
+  }
+  #copy{
+    display: flex;
+    flex-direction: column;
+  }
+  p{
+    font-size: 0.9rem;
+  }
+  #copyright{
+    margin-top: 2rem;
+  }
+  #mailicon{
+    width: 50px;
+  }
+  #email{
+    margin-top: 0;
+  }
+  @media screen and (max-width: 500px) {
+    h1, h2{
+      text-align: center;
+    }
+    #started{
+      width: 100%;
+    }
+    .bottom{
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    #about{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
